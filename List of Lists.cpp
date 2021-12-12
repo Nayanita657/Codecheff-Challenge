@@ -15,7 +15,6 @@ int main()
     {
         int N;
         int a;
-        //cout<<"Enter the size of list:\n";
         cin>>N;
         
         
@@ -30,13 +29,7 @@ int main()
         
         for(auto x:v1)
             umap[x]++;
-        //cout<<"Frequency Count\n";
-        /*for(auto itr = umap.begin();itr!=umap.end();itr++)
-        {
-            cout<<itr->first<<"--"<<itr->second<<"\n";
-        }*/
         
-        //picking element with high Frequency
         int Frequency = INT_MIN;
         int high_ele;
         for(auto itr = umap.begin(); itr!=umap.end(); itr++)
@@ -49,8 +42,7 @@ int main()
                 
             }
         }
-        //cout<<high_ele;
-        
+       
         if(N == 1 || Frequency == N)
         {
             cout<<0;
